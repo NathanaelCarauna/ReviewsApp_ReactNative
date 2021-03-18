@@ -19,12 +19,13 @@ const styles = StyleSheet.create({
         height: '100%',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: 'black'
     },
     headerText: {
         fontWeight: 'bold',
         fontSize: 20,
-        color: '#333',
+        color: 'yellow',
         letterSpacing: 1
     }
 })
