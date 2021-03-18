@@ -2,15 +2,15 @@ import {createStackNavigator } from 'react-navigation-stack';
 // import { createAppContainer } from 'react-navigation';
 import Home from '../screens/home';
 import ReviewDetails from '../screens/reviewDetails';
+import Header from '../shared/header';
+import React from 'react';
 
 const screens = {
     Home: {
         screen: Home,
         navigationOptions: {
-            title: 'Game Zone',
-            // headerStyle: { backgroundColor: 'black' },
-            // headerTintColor: 'yellow',
-            // headerTitleStyle: { fontWeight: 'bold'}
+            headerTitle: () => <Header/>,
+
         },
 
     },
@@ -23,11 +23,10 @@ const screens = {
 }
 
 const HomeStack = createStackNavigator(screens, {
-    defaultNavigationOptions: {
-        headerTitleAlign: 'center',
-        headerStyle: { backgroundColor: 'black'},
+    defaultNavigationOptions: {        
+        // headerStyle: { backgroundColor: 'black', padding: 0},
         headerTintColor: 'white',
-        headerTitleStyle: { fontWeight: 'bold'}
+        headerTitleStyle: { fontWeight: 'bold'}        
     }
 });
 
