@@ -8,8 +8,10 @@ export default function ReviewDetails({navigation}){
     }
     return (
         <View style={globalStyles.container}>
-            <Text style={globalStyles.titleText}>ReviewDetails Screen</Text>
-            <Button title="Go back to Home screen" onPress={pressHandler}/>
+            <Text style={globalStyles.titleText}>{navigation.getParam('title')}</Text>
+            <Text style={globalStyles.paragraph}>{navigation.getParam('body')}</Text>
+            <Text style={globalStyles.paragraph}>{navigation.getParam('rating')}</Text>
+            
         </View>
     )
 }
