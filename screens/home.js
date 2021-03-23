@@ -8,8 +8,8 @@ export default function Home({ navigation }){
     const [reviews, setReviews] = useState([
         {title: 'Zelda, breath of fresh air', rating: 5, body: 'Lorem ipsum', key: '1'},
         {title: 'Prince of Persia', rating: 4, body: 'Lorem ipsum', key: '2'},
-        {title: 'GTA 5', rating: 5, body: 'Lorem ipsum', key: '3'},
-        {title: 'My time at portia', rating: 5, body: 'Lorem ipsum', key: '4'}
+        {title: 'GTA 5', rating: 2, body: 'Lorem ipsum', key: '3'},
+        {title: 'My time at portia', rating: 1, body: 'Lorem ipsum', key: '4'}
     ])
 
     return (

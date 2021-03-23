@@ -13,5 +13,13 @@ export const globalStyles = StyleSheet.create({
     paragraph: {
         marginVertical: 8,
         lineHeight: 20,
+    },
+    rating: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        paddingTop: 16,
+        marginTop: 16,
+        borderTopWidth: 1,
+        borderTopColor: '#eee'
     }
 })
