@@ -8,10 +8,11 @@ import React from 'react';
 const screens = {
     Home: {
         screen: Home,
-        navigationOptions: {
-            headerTitle: () => <Header/>,
-
-        },
+        navigationOptions: ({navigation}) => {
+            return{
+                headerTitle: () => <Header navigation={navigation} title={'GameZone'}/>,
+            }
+        },    
 
     },
     ReviewDetails: {
@@ -24,9 +25,9 @@ const screens = {
 
 const HomeStack = createStackNavigator(screens, {
     defaultNavigationOptions: {        
-        // headerStyle: { backgroundColor: 'black', padding: 0},
-        headerTintColor: 'black',
-        headerTitleStyle: { fontWeight: 'bold'}        
+        headerTintColor: '#444',
+        // headerTitleStyle: { fontWeight: 'bold'},        
+        headerStyle: { backgroundColor: '#eee', height: 60},
     }
 });
 
